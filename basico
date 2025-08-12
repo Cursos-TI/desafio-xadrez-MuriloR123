@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+
+    int torre = 1;
+    int bispo = 1;
+    int dama = 1;
+    printf("TORRE\n");
+    while (torre <= 5) { printf("Esquerda\n") ;
+                      torre++;
+    }
+    printf("\n""BISPO\n");
+    do {
+        printf("Cima\n""Direita\n");
+        bispo++;
+    } while (bispo <= 5);
+    
+    printf("\n""RAINHA\n");
+    for (dama = 1; dama <= 8; dama++) {
+        printf("Esquerda\n");
+    }
+}
