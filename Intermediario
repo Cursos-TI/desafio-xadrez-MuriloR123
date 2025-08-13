@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    
+    int torre = 1;
+    int bispo = 1;
+    int dama = 1;
+    printf("TORRE\n");
+    while (torre <= 5) { printf("Esquerda\n") ;
+                      torre++;
+    }
+    printf("\n""BISPO\n");
+    do {
+        printf("Cima\n""Direita\n");
+        bispo++;
+    } while (bispo <= 5);
+    
+    printf("\n""RAINHA\n");
+    for (dama = 1; dama <= 8; dama++) {
+        printf("Esquerda\n");
+    }
+
+    int cavalo = 2;
+    int troiano = 1;
+    printf("\n""CAVALO\n");
+        for (int bravo = 0; bravo < cavalo; bravo++) {
+        printf("Baixo\n");
+    }
+
+    int alfa = 0;
+    while (alfa < troiano) {
+        printf("Esquerda\n");
+        alfa++;
+    }
+
+}
