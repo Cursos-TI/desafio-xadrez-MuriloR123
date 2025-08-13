@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+void torre(int direcao){
+if (direcao > 0) {printf("Esquerda\n");
+    torre(direcao - 1);}
+//Movimento da Torre
+}
+
+ void   bispo(int diagonal){
+    if (diagonal > 0) {printf("Cima\n"); printf("Direita\n");
+    bispo(diagonal - 1);}
+}
+//Movimento Bispo
+    
+  void dama(int space){
+    if (space > 0) {printf("Esquerda\n"); 
+    dama(space - 1);}
+}
+//Movimento Rainha 
+  
+
+
+int main() {
+    printf("\n""|----TORRE----|\n");
+    torre(5);
+    printf("\n""|----BISPO----|\n");
+    bispo(5);
+    printf("\n""|----RAINHA----|\n");
+    dama(8);
+    printf("\n""|----CAVALO----|\n");
+    
+    for (int c = 0; c < 3; c++) {
+        if (c == 0) continue; 
+        if (c == 3) break;    
+        printf("Cima\n ");
+    }
+   for (int d = 0; d < 2; d++) {
+        if (d == 0) continue; 
+        if (d == 2) break;    
+        printf("Direita\n ");
+   }
+    //Movimento Cavalo
+}
